@@ -1,0 +1,319 @@
+/* ============ Common CSS =========== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* =================== Common CSS Ends ============ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+/* ==================== Navbar CSS =================== */
+.ROW {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px 0 120px;
+}
+.logo img {
+  width: 92px;
+  height: 114.49px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  color: #000;
+  position: relative;
+}
+.link li a {
+  position: relative;
+  transition: all linear .2s;
+}
+.link li a:hover {
+  color: #EF8D21;
+}
+.link li a:hover:active {
+  transform: scale(1.3);
+}
+.btOFnav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-right: 143px;
+}
+.btONE,
+.btTWO {
+  width: 90px;
+  height: 46px;
+  color: #000;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  transition: all linear 0.2s;
+}
+.btTWO {
+  width: 134px;
+}
+.ROW .link li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #EF8D21;
+  left: 0;
+  bottom: 0;
+  transform: scale(0);
+  transition: transform 0.2s;
+}
+.ROW .link li a:hover::after {
+  transform: scale(1);
+}
+.btONE:hover,
+.btTWO:hover {
+  background: #EF8D21;
+  border-radius: 100px;
+  color: #fff;
+}
+.btONE:active,
+.btTWO:active {
+  transform: scale(1.3);
+}
+/* =================== Navbar CSS Ends ================== */
+
+
+
+
+
+/* ======================= Section One Start ======================== */
+.container{
+  display: flex;
+}
+#secONE {
+  width: 100%;
+  height: 100vh;
+}
+.imgFORback {
+  position: absolute;
+  left: 50px;
+  top: 300px;
+}
+.imgFORbackD {
+  position: absolute;
+  left: 0;
+  bottom: -190PX;
+  z-index: -1;
+}
+.bigatowTEXT {
+  padding-top: 190PX;
+}
+.container {
+  text-align: left;
+  padding: 20px;
+}
+.bigtextONE {
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #364547;
+  padding-left: 160px;
+
+
+}
+.bigtextTWO {
+  width: 900px;
+  height: 105px;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  color: #364547;
+  padding-left: 160px;
+
+
+}
+.bigtextTWO .scoterTEXTcolor {
+  color: #EF8D21;
+}
+.secONEleftDIV p {
+  width: 640px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  padding-left: 160px;
+
+}
+.secONEdivFORKlink {
+  width: 600px;
+  height: 70px;
+  background: #fff;
+  border-radius: 100px;
+  margin-top: 50px;
+  margin-left: 145px;
+  -webkit-box-shadow: -1px 9px 14px -5px rgba(0, 0, 0, 0.61);
+  -moz-box-shadow: -1px 9px 14px -5px rgba(0, 0, 0, 0.61);
+  box-shadow: -1px 9px 14px -5px rgba(0, 0, 0, 0.61);
+
+}
+.secONEul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+
+
+}
+.secONEliA {
+  /* margin-left: 20px;
+  margin-top: 25px; */
+  width: 134px;
+  height: 46px;
+  color: #8F8F8F;
+  border-radius: 100px;
+  text-align: center;
+  line-height: 46px;
+  transition: all linear .2s;
+  overflow: hidden;
+  border: 2px solid transparent;
+  position: relative;
+
+}
+.Fline{
+  position: absolute;
+  top: 695px;
+  left: 321px;
+  width: 2px;
+  height: 30px;
+}
+.Fline2{
+  position: absolute;
+  top: 695px;
+  left: 464px;
+  width: 2px;
+  height: 30px;
+}
+.Fline3{
+  position: absolute;
+  top: 695px;
+  left: 607px;
+  width: 2px;
+  height: 30px;
+}
+.secONEliA:hover {
+  background: #fff;
+  -webkit-box-shadow: -1px 8px 2px -1px rgba(239, 141, 33, 0.94);
+  -moz-box-shadow: -1px 8px 2px -1px rgba(239, 141, 33, 0.94);
+  box-shadow: -1px 8px 2px -1px rgba(239, 141, 33, 0.94);
+  border: 2px solid #000;
+}
+.secONEliA:hover:active{
+  transform: scale(1.3);
+}
+.secONErightDIV{
+  width: 100%;
+  height: 100vh;
+}
+.wtf{
+  position: absolute;
+  top: 204px;
+  right: 392px;
+}
+.praise{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 265px;
+  right: 133px;
+  color: #364547;
+}
+.praiseAMMAOUNT{
+  font-size: 55px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 290px;
+  right: 148px;
+  color: #EF8D21;
+  
+}
+.dotONE{
+  margin-top: 235px;
+  position: relative;
+}
+.dotONE .img1{
+  width: 412.35px;
+  height: 351.54px;
+  padding-left: 50px;
+  transform: rotate(10deg);
+}
+.dotONE .img2{
+  position: absolute;
+  width: 317.35px;
+  height: 314.54px;
+  top: 26px;
+  left: 72px;
+  transform: rotate(10deg);
+  z-index: -1;
+}
+.carcel{
+  position: relative;
+}
+.imgCARCEL{
+  width: 279PX;
+  height: 280PX;
+  position: absolute;
+  left: 91px;
+  top: 44px;
+  transform: rotate(9deg);
+  z-index: 99;
+}
+.manWIHTscoter{
+ position: absolute;
+  width: 220px;
+  height: 525px;
+  z-index: 100;
+  top:213px ;
+  right: 273px;
+}
+.rightLEEF{
+  width: 313px;
+  height: 393px;
+  position: absolute;
+  bottom: -199px;
+  right: 11px;
+  z-index: 101;
+}
+/* ======================= Section One Ends ======================== */
